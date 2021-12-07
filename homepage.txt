@@ -1,0 +1,451 @@
+import 'package:flutter/material.dart';
+import 'create_to_do.dart';
+
+class MaxAppOne extends StatelessWidget {
+  const MaxAppOne({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xfff8fbff),
+      appBar: AppBar(
+        // AppBar Properties Needed to Use for Styling
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            //backgroundImage: AssetImage
+            backgroundImage: AssetImage("assets/image2.jpg"),
+          ),
+        ),
+        title: const Text(
+          // Styling Text Properties Needed to Style Text
+          "My Tasks",
+          style: TextStyle(
+            color: Color(0xff25396f),
+            fontSize: 25,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.sort,
+              color: Color(0xff25396f),
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.search,
+              color: Color(0xff25396f),
+            ),
+          ),
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xffee2ef3),
+                  ),
+                  title: const Text(
+                    "Plan The Trip to Finland",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle:
+                      const Text("The family's trip to Finland Next Summer"),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xffee2ef3),
+                      ),
+                      Text(
+                        "Yesterday",
+                        style: TextStyle(
+                          color: Color(0xffee2ef3),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Plan Sunsan's Birthday",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "Today 15:00",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Groceries for Dinner",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: const Text(
+                      "Buy Red Wine at John's Wine Shop. Buy tomatoes, pepper, lettuce, bread and fillet, cream and beef, rice, plantain, cassava, cerelac, milo."),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "Today 15:00",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Take jacket to cleaning",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  //subtitle: const Text("Send the presentation to Bill"),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "FRI 30 OTC",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Port projects",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: const Text("Send the presentations to Bill"),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "Tomorrow",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Fix Dad's PC",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: const Text(
+                      "Install the latest updates and check your wireless connections."),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Text(
+                        "5:00pm",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                          fontSize: (18.5),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Plan Max's Journey on Programming",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "Today 15:00",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Completed",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Text(
+                        "24",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                color: Colors.white,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.check_circle_outline,
+                    color: Color(0xff25396f),
+                  ),
+                  title: const Text(
+                    "Flutter Developer Vision",
+                    style: TextStyle(
+                      color: Color(0xff25396f),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: const Text(
+                      "I shall be an Amazing Flutter Developer A Year by Now. I will not GIVE UP NO MATTER WHAT!!!"),
+                  trailing: Row(
+                    // this widget brings items to the tail end of the card
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Icon(
+                        Icons.notifications_active,
+                        color: Color(0xff25396f),
+                      ),
+                      Text(
+                        "FRI 30 OTC",
+                        style: TextStyle(
+                          color: Color(0xff25396f),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return const CreateToDo();
+            }),
+          );
+        },
+        child: const Icon(Icons.add),
+      ),
+      bottomNavigationBar: InkWell(
+        child: SizedBox(
+          height: 50,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: const [
+                    Icon(
+                      Icons.check_circle,
+                      color: Color(0xff25396f),
+                    ),
+                    SizedBox(
+                      width: 7,
+                    ),
+                    Text("Completed", style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                    ),),
+                    SizedBox(
+                      width: 7,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_sharp,
+                      color: Color(0xff25396f),
+                    ),
+                  ],
+                ),
+                const Text(
+                  "24",
+                  style: TextStyle(
+                    color: Color(0xff25396f),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        onTap: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return const SafeArea(
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      "Maxwell",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                );
+              });
+        },
+      ),
+    );
+  }
+}
